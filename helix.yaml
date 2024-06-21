@@ -1,0 +1,9 @@
+name: My Example Helix App
+description: A selection of assistants to help me do stuff.
+assistants:
+- name: Bitcoin price API
+  apis:
+    - name: Coindesk API
+      description: Gets the current Bitcoin price in USD, GPB and EUR.
+      url: https://api.coindesk.com/v1
+      schema: ./openapi/coindesk.yaml
