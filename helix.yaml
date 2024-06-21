@@ -1,9 +1,9 @@
-name: My Example Helix App
-description: A selection of assistants to help me do stuff.
+name: Recruitment tool
+description: Ask me questions about the hiring pipeline, like "What job is Marcus applying for?"
 assistants:
-- name: Bitcoin price API
+- model: llama3:instruct
   apis:
-    - name: Coindesk API
-      description: Gets the current Bitcoin price in USD, GPB and EUR.
-      url: https://api.coindesk.com/v1
-      schema: ./openapi/coindesk.yaml
+    - name: Demo Hiring Pipeline API
+      description: List all job vacancies, optionally filter by job title and/or candidate name
+      url: https://demos.tryhelix.ai
+      schema: ./openapi/jobvacancies.yaml
